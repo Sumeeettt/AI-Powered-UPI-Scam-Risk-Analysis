@@ -1,503 +1,192 @@
 # 🛡️ FinShield
 
-**FinShield** is an AI-powered UPI fraud and scam risk analysis platform that helps users verify suspicious UPI messages, links, UPI IDs, payment screenshots, and scam-related content before trusting them.
+## AI-Powered UPI Fraud & Scam Risk Analysis Platform
 
-It provides risk score, trust score, scam category prediction, warning signals, safety guidance, and emergency steps to help users make safer digital payment decisions.
+**FinShield** is an AI-driven cybersecurity platform designed to help users identify and avoid UPI and digital payment scams before they become victims. The platform analyzes suspicious messages, URLs, UPI IDs, payment screenshots, and other scam-related content to estimate potential fraud risk using a combination of Artificial Intelligence, Machine Learning, OCR, and rule-based security analysis.
+
+Rather than making absolute fraud claims, FinShield provides users with a comprehensive **Risk Assessment Report**, including a **Risk Score**, **Trust Score**, **Scam Category Prediction**, **Threat Indicators**, and **Recommended Safety Actions**. This enables users to make informed decisions before sharing sensitive information or completing online payments.
 
 ---
 
 ## 🚀 Project Overview
 
-Online payment scams, fake KYC messages, reward scams, digital arrest threats, fake customer care numbers, and fake payment screenshots are becoming common. Many users are confused about whether they should trust a message, link, UPI ID, or screenshot.
+The rapid growth of digital payments has also led to an increase in cyber fraud, including fake KYC verification requests, reward scams, phishing links, fake customer support, remote access scams, digital arrest threats, and fraudulent payment confirmations.
 
-**FinShield solves this problem by acting as a digital trust-check assistant.**
-
-Users can paste suspicious content or upload screenshots, and FinShield analyzes them using rule-based detection, AI/ML classification, OCR, URL/UPI checking, and safety recommendations.
+FinShield acts as a personal digital security assistant by helping users verify suspicious payment-related content before trusting or interacting with it. Users can either paste suspicious text or upload screenshots, and the system automatically analyzes the content using OCR, AI-powered text classification, URL and UPI validation, and intelligent rule-based detection.
 
 ---
 
-## 🎯 Main Objective
+## 🎯 Project Objective
 
-The main goal of FinShield is to help users answer one important question:
+The primary objective of FinShield is to answer a simple but critical question:
 
-> **“Should I trust this message, link, UPI ID, or payment screenshot?”**
+> **"Can this payment request, message, UPI ID, or link be trusted?"**
 
-FinShield does not claim 100% fraud detection. It provides risk-based awareness support and recommends users verify through official bank or UPI app channels.
-
----
-
-## ✨ Features
-
-### 🔍 1. Quick Scam Scan
-
-Users can paste suspicious messages, banking warnings, reward texts, UPI requests, or URLs and get instant risk analysis.
-
-### 🧠 2. AI/ML Scam Category Detection
-
-FinShield predicts scam categories such as:
-
-- KYC Scam
-- Reward Scam
-- OTP / UPI PIN Scam
-- Digital Arrest Scam
-- Fake Customer Care Scam
-- Remote Access Scam
-- Suspicious Payment Request
-- Fake Payment Proof
-- Safe Message / Payment Receipt
-
-### 📊 3. Trust Score & Risk Score
-
-The system provides:
-
-- Risk Score
-- Trust Score
-- Risk Level
-- Scam Category
-- ML Confidence
-- Explanation of why the content is risky
-
-### 🔗 4. URL & UPI ID Checker
-
-FinShield detects suspicious URLs and UPI IDs by checking:
-
-- Fake KYC links
-- Short URLs
-- HTTP links
-- Suspicious domain words
-- Suspicious UPI IDs like `refundclaim@ybl`, `kycverify@upi`, etc.
-
-### 🖼️ 5. Screenshot OCR Analysis
-
-Users can upload payment screenshots or scam screenshots.  
-FinShield extracts text using browser-based OCR and then analyzes the extracted text.
-
-### 📜 6. PDF Scam Report Export
-
-Users can download a scam analysis report containing:
-
-- Input text / OCR text
-- Risk score
-- Trust score
-- Scam category
-- Detected signals
-- Extracted URLs / UPI IDs
-- Recommended action
-- Safety tips
-
-### 🚨 7. Emergency Action Guide
-
-If a user is scammed, FinShield provides emergency steps such as:
-
-- Contact bank immediately
-- Block/freeze card or account
-- Save screenshots and UTR
-- Report cybercrime
-- Change UPI PIN/passwords
-- Monitor bank statements
-
-### 🤖 8. FinShield Assistant Chatbot
-
-A project-specific chatbot that can answer questions like:
-
-- Why is this risky?
-- What should I do now?
-- What is KYC scam?
-- What if I shared OTP?
-- How do I report fraud?
-- How does Trust Score work?
-
-### 📈 9. Dashboard Analytics
-
-Logged-in users can view:
-
-- Total analyses
-- Critical cases
-- High-risk cases
-- Safe cases
-- Risk level chart
-- Scam category chart
-- Recent analysis history
+Instead of providing a simple safe/unsafe response, FinShield offers a detailed risk assessment with transparent explanations, allowing users to understand why content appears suspicious and what actions they should take next.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Key Highlights
+
+* AI-powered scam category prediction using Machine Learning
+* Hybrid detection engine combining ML and rule-based analysis
+* Risk Score, Trust Score, and confidence-based predictions
+* Suspicious URL and UPI ID verification
+* OCR-based payment screenshot analysis
+* Detection of fake payment proofs and phishing attempts
+* Downloadable PDF security reports
+* Interactive dashboard with scan history and analytics
+* Emergency response guide for fraud victims
+* Integrated AI assistant for scam awareness and safety guidance
+* JWT-based secure authentication with protected user dashboard
+
+---
+
+## 💡 Core Features
+
+* **Quick Scam Scan** for suspicious messages and payment requests
+* **Machine Learning Scam Classification**
+* **Risk & Trust Score Generation**
+* **URL and UPI ID Security Analysis**
+* **Payment Screenshot OCR Analysis**
+* **Fraud Detection Explanation Engine**
+* **PDF Report Generation**
+* **Emergency Fraud Response Guide**
+* **Personal Scan History**
+* **Dashboard Analytics**
+* **AI-powered FinShield Assistant**
+
+---
+
+## 🧠 Technologies Used
 
 ### Frontend
 
-- React.js
-- Vite
-- Tailwind CSS
-- React Router DOM
-- Axios
-- Recharts
-- Lucide React
-- React Hot Toast
-- Tesseract.js
-- jsPDF / html2canvas
+* React.js
+* Vite
+* Tailwind CSS
+* React Router
+* Axios
+* Recharts
+* Lucide React
+* React Hot Toast
+* Tesseract.js
+* jsPDF
+* html2canvas
 
 ### Backend
 
-- Python
-- FastAPI
-- MongoDB
-- Motor
-- Pydantic
-- JWT Authentication
-- Passlib / bcrypt
-- scikit-learn
-- pandas
-- joblib
+* Python
+* FastAPI
+* MongoDB
+* Motor
+* Pydantic
+* JWT Authentication
+* Passlib (bcrypt)
+* Scikit-learn
+* Pandas
+* Joblib
+
+### Machine Learning
+
+* TF-IDF Vectorization
+* Logistic Regression / Naive Bayes
+* Text Classification
+* Feature Engineering
+* Confidence-based Prediction
 
 ### Database
 
-- MongoDB Atlas / Local MongoDB
+* MongoDB Atlas / Local MongoDB
 
 ---
 
-## 📁 Folder Structure
+## 🔒 Security Approach
 
-```bash
-finshield/
-│
-├── backend/
-│   ├── app/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── services/
-│   │   ├── ml/
-│   │   ├── utils/
-│   │   ├── main.py
-│   │   ├── config.py
-│   │   └── database.py
-│   │
-│   ├── requirements.txt
-│   ├── .env.example
-│   └── README.md
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── api/
-│   │   ├── utils/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   │
-│   ├── package.json
-│   ├── .env.example
-│   └── README.md
-│
-├── .gitignore
-└── README.md
-```
+FinShield combines multiple detection techniques to improve reliability:
+
+* Rule-based scam detection
+* AI/ML text classification
+* OCR text extraction
+* URL validation
+* UPI ID pattern analysis
+* Threat keyword identification
+* Risk scoring algorithm
+* Confidence estimation
+
+This hybrid approach enables the system to provide explainable and transparent scam analysis instead of relying solely on a single machine learning model.
 
 ---
 
-## ⚙️ Backend Setup
+## 📊 Analysis Report
 
-### 1. Go to backend folder
+After every scan, FinShield generates a detailed security report containing:
 
-```bash
-cd backend
-```
-
-### 2. Create virtual environment
-
-```bash
-python -m venv venv
-```
-
-### 3. Activate virtual environment
-
-For Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-### 4. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 5. Create `.env` file
-
-Create a `.env` file inside the backend folder:
-
-```env
-MONGO_URI=your_mongodb_connection_string
-DATABASE_NAME=finshield_db
-JWT_SECRET=your_super_secret_key
-JWT_ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=1440
-FRONTEND_URL=http://localhost:5173
-```
-
-### 6. Run backend server
-
-```bash
-uvicorn app.main:app --reload
-```
-
-Backend will run on:
-
-```bash
-http://localhost:8000
-```
+* Risk Score
+* Trust Score
+* Risk Level
+* Predicted Scam Category
+* Model Confidence
+* Detected Threat Indicators
+* Extracted URLs and UPI IDs
+* OCR Text (if applicable)
+* Recommended Actions
+* Safety Tips
+* Timestamp
+* Disclaimer
 
 ---
 
-## 💻 Frontend Setup
+## 📈 Dashboard
 
-### 1. Go to frontend folder
+Authenticated users can monitor their activity through an interactive dashboard featuring:
 
-```bash
-cd frontend
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Create `.env` file
-
-Create a `.env` file inside the frontend folder:
-
-```env
-VITE_API_BASE_URL=http://localhost:8000
-```
-
-### 4. Run frontend
-
-```bash
-npm run dev
-```
-
-Frontend will run on:
-
-```bash
-http://localhost:5173
-```
-
----
-
-## 🧠 ML Model Training
-
-FinShield uses a text classification model for scam category prediction.
-
-To train the model:
-
-```bash
-cd backend
-python app/ml/train_model.py
-```
-
-The ML model uses:
-
-- TF-IDF Vectorizer
-- Logistic Regression / Naive Bayes
-- Scam training dataset
-
----
-
-## 🔐 Authentication
-
-FinShield supports JWT-based authentication.
-
-Authenticated users can access:
-
-- Dashboard
-- Analyze Text
-- Analyze Image
-- History
-- Report Scam
-- Profile
-
-Public users can access:
-
-- Home
-- Quick Scan
-- Checker
-- Awareness
-- Emergency Guide
-
----
-
-## 🧪 Example Test Inputs
-
-### KYC Scam
-
-```text
-Dear customer, your KYC will be blocked today. Click http://bank-kyc-verify.com and pay Rs 10.
-```
-
-Expected result:
-
-```text
-Risk Level: Critical
-Scam Type: KYC Scam
-```
-
----
-
-### OTP Scam
-
-```text
-Share your OTP to receive refund.
-```
-
-Expected result:
-
-```text
-Risk Level: Critical
-Scam Type: OTP / UPI PIN Scam
-```
-
----
-
-### Reward Scam
-
-```text
-Congratulations! You won Rs 5000 cashback. Share your UPI PIN to claim.
-```
-
-Expected result:
-
-```text
-Risk Level: Critical
-Scam Type: Reward Scam / OTP Scam
-```
-
----
-
-### Digital Arrest Scam
-
-```text
-You are under digital arrest. Transfer Rs 25000 immediately to avoid legal action.
-```
-
-Expected result:
-
-```text
-Risk Level: Critical
-Scam Type: Digital Arrest Scam
-```
-
----
-
-### Safe Payment Message
-
-```text
-Your UPI payment of Rs 250 to grocery store was successful. Transaction ID AXI123456789.
-```
-
-Expected result:
-
-```text
-Risk Level: Safe / Low Risk
-Scam Type: Safe Message
-```
-
----
-
-## 📌 Main Pages
-
-| Page | Description |
-|---|---|
-| Home | Landing page with project overview |
-| Quick Scan | Public scam message/link checker |
-| Checker | URL and UPI ID risk checker |
-| Awareness | UPI fraud awareness tips |
-| Emergency Guide | Steps to follow after scam |
-| Dashboard | User analysis analytics |
-| Analyze Text | Authenticated text analysis |
-| Analyze Image | Screenshot-based analysis |
-| History | Previous analysis records |
-| Report Scam | Submit scam report |
-| Profile | User profile |
-
----
-
-## 📊 Dashboard Features
-
-The dashboard shows:
-
-- Total analyses
-- Critical cases
-- High-risk cases
-- Safe cases
-- Risk level distribution
-- Scam category distribution
-- Recent analysis history
+* Total Analyses
+* High-Risk Cases
+* Critical Threats
+* Safe Analyses
+* Risk Distribution Charts
+* Scam Category Statistics
+* Recent Scan History
+* Personal Security Insights
 
 ---
 
 ## 🤖 FinShield Assistant
 
-FinShield Assistant is a chatbot that helps users understand scam risks and safety steps.
+The integrated AI assistant helps users understand fraud risks by answering questions such as:
 
-It can answer:
-
-- Why is this risky?
-- What should I do if I clicked a scam link?
-- What if I shared OTP?
-- How do I report cyber fraud?
-- How does Trust Score work?
+* Why is this message considered risky?
+* What should I do if I clicked a phishing link?
+* What happens if I shared my OTP?
+* How can I report cyber fraud?
+* How is the Trust Score calculated?
+* What are the warning signs of UPI scams?
 
 ---
 
-## 📄 PDF Report
+## 🎯 Project Outcome
 
-Users can download a PDF report after analysis.  
-The report includes:
+FinShield demonstrates how Artificial Intelligence, Machine Learning, OCR, and cybersecurity principles can be combined to build an intelligent fraud-awareness platform that assists users in identifying suspicious digital payment activities before financial loss occurs.
 
-- Date and time
-- Original input
-- OCR text if image was uploaded
-- Risk score
-- Trust score
-- Scam category
-- Detected signals
-- Safety tips
-- Recommended action
-- Disclaimer
+The project focuses on improving digital payment awareness, promoting cyber safety, and supporting informed decision-making rather than replacing official banking or law enforcement verification processes.
 
 ---
 
 ## ⚠️ Disclaimer
 
-FinShield provides **risk-based awareness support only**.
+FinShield is an educational and awareness-focused cybersecurity project that provides risk-based analysis only.
 
-It does not guarantee 100% fraud detection and should not be treated as a final legal, banking, or police authority.
+It does not guarantee complete fraud detection and should not be considered a replacement for official verification by banks, UPI service providers, or government cybercrime authorities.
 
-Always verify suspicious messages, links, payment screenshots, or UPI requests through:
-
-- Official bank app
-- Official UPI app
-- Official bank website
-- Bank branch
-- Cybercrime authorities
+Users should always verify suspicious payment requests through official banking channels before taking any financial action.
 
 ---
 
-## 🧾 Resume Points
+# 👨‍💻 Developer
 
-You can mention this project in your resume like this:
+**Sumit Kumar Singh**
 
-- Developed **FinShield**, a full-stack UPI fraud risk analysis platform using React, FastAPI, MongoDB, OCR, and ML-based text classification.
-- Implemented a hybrid scam detection engine combining rule-based detection, URL/UPI ID analysis, OCR text extraction, and AI/ML scam category prediction.
-- Built a professional dashboard with risk analytics, scan history, PDF report export, emergency guide, and chatbot-based scam awareness support.
+**B.Tech Computer Science & Engineering**
 
----
-
-## 👨‍💻 Developer
-
-**Prem Parihar**
-
-B.Tech CSE Student  
-Project: FinShield - AI-Powered UPI Fraud & Scam Detection System
+**Project:** FinShield | AI-Powered UPI Fraud & Scam Risk Analysis Platform
