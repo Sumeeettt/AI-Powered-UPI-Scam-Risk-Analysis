@@ -1,0 +1,13 @@
+{
+  "name": "finshield-main",
+  "version": "1.0.0",
+  "description": "**FinShield** is an AI-powered UPI fraud and scam risk analysis platform that helps users verify suspicious UPI messages, links, UPI IDs, payment screenshots, and scam-related content before trusting them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
